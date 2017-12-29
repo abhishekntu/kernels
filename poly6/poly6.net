@@ -1,0 +1,80 @@
+.input N1
+pinlist: N1
+
+.input N2
+pinlist: N2
+
+.input N3
+pinlist: N3
+
+.output out:N29
+pinlist: N29
+
+.fu N28_blk
+pinlist: N10 N2 N3 N22 N28 open open open open 
+subblock: N28_blk 0 1 2 3 4 open open open open
+
+.fu N23_blk
+pinlist: N3 open open open N23 open open open open 
+subblock: N23_blk 0 open open open 4 open open open open
+
+.fu N22_blk
+pinlist: N3 open open open N22 open open open open 
+subblock: N22_blk 0 open open open 4 open open open open
+
+.fu N21_blk
+pinlist: N2 N3 open open N21 open open open open 
+subblock: N21_blk 0 1 open open 4 open open open open
+
+.fu N20_blk
+pinlist: N2 N3 open open N20 open open open open 
+subblock: N20_blk 0 1 open open 4 open open open open
+
+.fu N27_blk
+pinlist: N3 N11 N2 N19 N27 open open open open 
+subblock: N27_blk 0 1 2 3 4 open open open open
+
+.fu N25_blk
+pinlist: N3 open open open N25 open open open open 
+subblock: N25_blk 0 open open open 4 open open open open
+
+.fu N8_blk
+pinlist: N5 N9 N2 N23 N8 open open open open 
+subblock: N8_blk 0 1 2 3 4 open open open open
+
+.fu N9_blk
+pinlist: N3 open open open N9 open open open open 
+subblock: N9_blk 0 open open open 4 open open open open
+
+.fu N5_blk
+pinlist: N2 N3 open open N5 open open open open 
+subblock: N5_blk 0 1 open open 4 open open open open
+
+.fu N6_blk
+pinlist: N1 N25 N8 N13 N6 open open open open 
+subblock: N6_blk 0 1 2 3 4 open open open open
+
+.fu N13_blk
+pinlist: N3 N15 open open N13 open open open open 
+subblock: N13_blk 0 1 open open 4 open open open open
+
+.fu N10_blk
+pinlist: N3 N20 open open N10 open open open open 
+subblock: N10_blk 0 1 open open 4 open open open open
+
+.fu N11_blk
+pinlist: N3 open open open N11 open open open open 
+subblock: N11_blk 0 open open open 4 open open open open
+
+.fu N16_blk
+pinlist: N6 N1 N27 open N29 open open open open 
+subblock: N16_blk 0 1 2 open 4 open open open open
+
+.fu N15_blk
+pinlist: N2 N28 open open N15 open open open open 
+subblock: N15_blk 0 1 open open 4 open open open open
+
+.fu N19_blk
+pinlist: N2 N21 open open N19 open open open open 
+subblock: N19_blk 0 1 open open 4 open open open open
+

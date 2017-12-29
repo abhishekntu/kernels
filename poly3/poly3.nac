@@ -1,0 +1,58 @@
+procedure foo(in s32 t,in s32 u,in s32 v,in s32 x,in s32 y,in s32 z,out s32 D_2581)
+{
+  localvar s32 D_2580;
+  localvar s32 t1_1;
+  localvar s32 t1_2;
+  localvar s32 t1_3;
+  localvar s32 t1_4;
+  localvar s32 t1_5;
+  localvar s32 t1_6;
+  localvar s32 t1_7;
+  localvar s32 t1_8;
+  localvar s32 t1_9;
+  localvar s32 t1_10;
+  localvar s32 t2_1;
+  localvar s32 t2_2;
+  localvar s32 t2_3;
+  localvar s32 t2_4;
+  localvar s32 t2_5;
+  localvar s32 t2_6;
+  localvar s32 t2_7;
+  localvar s32 t2_8;
+  localvar s32 t3_1;
+  localvar s32 t3_2;
+  localvar s32 t3_3;
+  localvar s32 t3_4;
+  localvar s32 t3_5;
+  localvar s32 t3_6;
+  localvar s32 t3_7;
+  localvar s32 t4_1;
+  localvar s32 t4_2;
+  localvar s32 t4_3;
+  localvar s32 t4_4;
+  localvar s32 t5_1;
+  localvar s32 t5_2;
+  localvar s32 t5_3;
+  localvar s32 t6_1;
+  localvar s32 t6_2;
+  localvar s32 t6_3;
+  localvar s32 t7_1;
+  localvar s32 t7_2;
+  localvar s32 t8_1;
+  localvar s32 t8_2;
+  localvar s32 t9_1;
+  localvar s32 t10_1;
+  localvar s32 t11_1;
+L0005:
+  t1_1 <= sqr v;
+  t1_2 <= mul y,u;
+  t2_1 <= mul t1_1,11;
+  t2_2 <= mul t1_2,25;
+  D_2580 <= mul t,2;
+  t3_1 <= add D_2580,x;
+  t3_2 <= mul z,80;
+  t4_1 <= sub t3_1,t2_1;
+  t4_2 <= sub t2_2,t3_2;
+  t5_1 <= mul t4_1,15;
+  D_2581 <= add t5_1,t4_2;
+}

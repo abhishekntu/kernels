@@ -1,0 +1,49 @@
+procedure foo(in s32 in3,in s32 in14,in s32 in5,in s32 in16,in s32 in7,in s32 in18,in s32 in9,in s32 in20,in s32 in11,in s32 in22,in s32 in35,in s32 in46,in s32 in47,in s32 in58,in s32 in59,in s32 in70,out s32 D_2569)
+{
+  localvar s32 D_2563;
+  localvar s32 D_2564;
+  localvar s32 D_2565;
+  localvar s32 D_2566;
+  localvar s32 D_2567;
+  localvar s32 D_2568;
+  localvar s32 D_2570;
+  localvar s32 temp_1;
+  localvar s32 temp_2;
+  localvar s32 temp_3;
+  localvar s32 temp_4;
+  localvar s32 temp_5;
+  localvar s32 temp_6;
+  localvar s32 temp_7;
+  localvar s32 temp_8;
+  localvar s32 t_1;
+  localvar s32 t_2;
+  localvar s32 t_3;
+  localvar s32 t_4;
+  localvar s32 t_5;
+  localvar s32 t_6;
+  localvar s32 t_7;
+L0005:
+  temp_1 <= sub in3,in14;
+  temp_2 <= sub in5,in16;
+  temp_3 <= sub in7,in18;
+  temp_4 <= sub in9,in20;
+  temp_5 <= sub in11,in22;
+  temp_6 <= sub in35,in46;
+  temp_7 <= sub in47,in58;
+  temp_8 <= sub in59,in70;
+  t_1 <= sqr temp_1;
+  D_2563 <= sqr temp_2;
+  t_2 <= add D_2563,t_1;
+  D_2564 <= sqr temp_3;
+  t_3 <= add D_2564,t_2;
+  D_2565 <= sqr temp_4;
+  t_4 <= add D_2565,t_3;
+  D_2566 <= sqr temp_5;
+  t_5 <= add D_2566,t_4;
+  D_2567 <= sqr temp_6;
+  t_6 <= add D_2567,t_5;
+  D_2568 <= sqr temp_7;
+  t_7 <= add D_2568,t_6;
+  D_2570 <= sqr temp_8;
+  D_2569 <= add D_2570,t_7;
+}

@@ -1,0 +1,39 @@
+procedure foo(in s32 x,in s32 y,out s32 D_2534)
+{
+  localvar s32 D_2535;
+  localvar s32 D_2536;
+  localvar s32 D_2537;
+  localvar s32 D_2538;
+  localvar s32 D_2539;
+  localvar s32 D_2540;
+  localvar s32 D_2541;
+  localvar s32 D_2542;
+  localvar s32 D_2543;
+  localvar s32 D_2544;
+  localvar s32 D_2545;
+  localvar s32 D_2546;
+  localvar s32 D_2547;
+  localvar s32 D_2548;
+  localvar s32 D_2549;
+  localvar s32 D_2550;
+  localvar s32 D_2551;
+L0005:
+  D_2535 <= mul x,7;
+  D_2536 <= mul y,-76;
+  D_2537 <= add D_2535,D_2536;
+  D_2538 <= add D_2537,7;
+  D_2539 <= mul D_2538,x;
+  D_2540 <= mul y,92;
+  D_2541 <= sub D_2540,39;
+  D_2542 <= mul D_2541,y;
+  D_2543 <= add D_2539,D_2542;
+  D_2544 <= add D_2543,7;
+  D_2545 <= mul D_2544,x;
+  D_2546 <= mul y,-984;
+  D_2547 <= sub D_2546,46;
+  D_2548 <= mul D_2547,y;
+  D_2549 <= sub D_2548,46;
+  D_2550 <= mul D_2549,y;
+  D_2551 <= add D_2545,D_2550;
+  D_2534 <= sub D_2551,75;
+}

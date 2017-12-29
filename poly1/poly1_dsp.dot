@@ -1,0 +1,23 @@
+digraph graphname {
+N8 [color="black", ntype="operation", label="N7N5_sub_N7_mul_N5_N8"];
+N9 [color="black", ntype="outvar", label="O0_N12_N9"];
+N1 [color="black", ntype="invar", label="I0_N1_N1"];
+N2 [color="black", ntype="invar", label="I1_N2_N2"];
+N3 [color="black", ntype="operation", label="N11_sub_Imm_1_N11_N3"];
+N4 [color="black", ntype="operation", label="N8_sqr_N8_N4"];
+N5 [color="black", ntype="operation", label="N9_sqr_N9_N5"];
+N6 [color="black", ntype="operation", label="N4_add_Imm_1_N4_N6"];
+N7 [color="black", ntype="operation", label="N6N3N10_add_N6_mul_N3_sub_N10_N7"];
+N8 -> N7;
+N1 -> N5;
+N1 -> N6;
+N1 -> N3;
+N2 -> N8;
+N2 -> N7;
+N2 -> N4;
+N3 -> N7;
+N4 -> N8;
+N5 -> N7;
+N6 -> N8;
+N7 -> N9;
+}

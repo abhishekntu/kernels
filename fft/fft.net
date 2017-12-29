@@ -1,0 +1,54 @@
+.input N1
+pinlist: N1
+
+.input N2
+pinlist: N2
+
+.input N3
+pinlist: N3
+
+.input N4
+pinlist: N4
+
+.input N5
+pinlist: N5
+
+.input N6
+pinlist: N6
+
+.output out:N16
+pinlist: N16
+
+.output out:N17
+pinlist: N17
+
+.output out:N15
+pinlist: N15
+
+.output out:N18
+pinlist: N18
+
+.fu N12_blk
+pinlist: N6 N13 open open N17 open open open open 
+subblock: N12_blk 0 1 open open 4 open open open open
+
+.fu N13_blk
+pinlist: N1 N2 N4 N5 N13 open open open open 
+subblock: N13_blk 0 1 2 3 4 open open open open
+
+.fu N10_blk
+pinlist: N6 N13 open open N16 open open open open 
+subblock: N10_blk 0 1 open open 4 open open open open
+
+.fu N11_blk
+pinlist: N2 N4 N1 N5 N11 open open open open 
+subblock: N11_blk 0 1 2 3 4 open open open open
+
+.fu N14_blk
+pinlist: N3 N11 open open N15 open open open open 
+subblock: N14_blk 0 1 open open 4 open open open open
+
+.fu N8_blk
+pinlist: N3 N11 open open N18 open open open open 
+subblock: N8_blk 0 1 open open 4 open open open open
+

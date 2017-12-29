@@ -1,0 +1,17 @@
+procedure foo(in s32 x,out s32 D_2534)
+{
+  localvar s32 D_2535;
+  localvar s32 D_2536;
+  localvar s32 D_2537;
+  localvar s32 D_2538;
+  localvar s32 D_2539;
+  localvar s32 temp;
+L0005:
+  temp <= mul x,16;
+  D_2535 <= mul temp,x;
+  D_2536 <= sub D_2535,20;
+  D_2537 <= mul D_2536,x;
+  D_2538 <= mul D_2537,x;
+  D_2539 <= add D_2538,5;
+  D_2534 <= mul D_2539,x;
+}

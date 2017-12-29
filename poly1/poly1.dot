@@ -1,0 +1,39 @@
+digraph foo
+{
+  graph [rankdir="TB", nodesep = "0.175"];
+  node [fontname="Courier", fontsize="12", style="filled"];
+  edge [fontname="Courier", fontsize="12"];
+
+  D_2576  [label="D_2576", ntype="outvar", argix="0", dataspec="s32", bb="-1", shape="triangle", fillcolor="cyan"];
+  add_0  [label="add", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  add_5  [label="add", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  cnst1  [label="1", ntype="constant", argix="-1", dataspec="s32", bb="-1", shape="diamond", fillcolor="magenta"];
+  mul_6  [label="mul", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mul_7  [label="mul", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  sqr_1  [label="sqr", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  sqr_2  [label="sqr", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  sub_3  [label="sub", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  sub_4  [label="sub", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  sub_8  [label="sub", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  x  [label="x", ntype="invar", argix="0", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+  y  [label="y", ntype="invar", argix="1", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+
+  add_0 -> sub_4  [label="t1_1$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  add_5 -> mul_7  [label="t3_1$1", etype="D", vtype="localvar", order="2", argix="-1", dataspec="s32"];
+  cnst1 -> add_0  [label="1", etype="D", vtype="globalvar", order="2", argix="-1", dataspec="s32"];
+  cnst1 -> sub_3  [label="1", etype="D", vtype="globalvar", order="2", argix="-1", dataspec="s32"];
+  mul_6 -> sub_8  [label="t3_2$1", etype="D", vtype="localvar", order="2", argix="-1", dataspec="s32"];
+  mul_7 -> sub_8  [label="t4_1$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  sqr_1 -> mul_6  [label="t1_2$1", etype="D", vtype="localvar", order="2", argix="-1", dataspec="s32"];
+  sqr_2 -> mul_7  [label="t2_1$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  sub_3 -> add_5  [label="t2_2$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  sub_4 -> mul_6  [label="t2_3$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  sub_8 -> D_2576  [label="D_2576", etype="D", vtype="outarg", order="1", argix="-1", dataspec="s32"];
+  x -> add_0  [label="x", etype="D", vtype="inarg", order="1", argix="-1", dataspec="s32"];
+  x -> sqr_2  [label="x", etype="D", vtype="inarg", order="1", argix="-1", dataspec="s32"];
+  x -> sub_3  [label="x", etype="D", vtype="inarg", order="1", argix="-1", dataspec="s32"];
+  y -> add_5  [label="y", etype="D", vtype="inarg", order="2", argix="-1", dataspec="s32"];
+  y -> sqr_1  [label="y", etype="D", vtype="inarg", order="1", argix="-1", dataspec="s32"];
+  y -> sub_4  [label="y", etype="D", vtype="inarg", order="2", argix="-1", dataspec="s32"];
+
+}

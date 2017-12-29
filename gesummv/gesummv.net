@@ -1,0 +1,124 @@
+.input N21
+pinlist: N21
+
+.input N20
+pinlist: N20
+
+.input N8
+pinlist: N8
+
+.input N9
+pinlist: N9
+
+.input N1
+pinlist: N1
+
+.input N2
+pinlist: N2
+
+.input N3
+pinlist: N3
+
+.input N4
+pinlist: N4
+
+.input N5
+pinlist: N5
+
+.input N6
+pinlist: N6
+
+.input N7
+pinlist: N7
+
+.input N12
+pinlist: N12
+
+.input N13
+pinlist: N13
+
+.input N10
+pinlist: N10
+
+.input N11
+pinlist: N11
+
+.input N16
+pinlist: N16
+
+.input N17
+pinlist: N17
+
+.input N14
+pinlist: N14
+
+.input N15
+pinlist: N15
+
+.input N18
+pinlist: N18
+
+.input N19
+pinlist: N19
+
+.output out:N48
+pinlist: N48
+
+.output out:N47
+pinlist: N47
+
+.output out:N46
+pinlist: N46
+
+.fu N41_blk
+pinlist: N9 N21 N1 N4 N41 open open open open 
+subblock: N41_blk 0 1 2 3 4 open open open open
+
+.fu N40_blk
+pinlist: N37 N39 N34 open N47 open open open open 
+subblock: N40_blk 0 1 2 open 4 open open open open
+
+.fu N43_blk
+pinlist: N8 N11 N45 N32 N46 open open open open 
+subblock: N43_blk 0 1 2 3 4 open open open open
+
+.fu N42_blk
+pinlist: N9 N12 N4 N10 N42 open open open open 
+subblock: N42_blk 0 1 2 3 4 open open open open
+
+.fu N45_blk
+pinlist: N4 N18 N9 N19 N45 open open open open 
+subblock: N45_blk 0 1 2 3 4 open open open open
+
+.fu N29_blk
+pinlist: N11 N16 N31 open N29 open open open open 
+subblock: N29_blk 0 1 2 open 4 open open open open
+
+.fu N27_blk
+pinlist: N2 N4 N9 N20 N27 open open open open 
+subblock: N27_blk 0 1 2 3 4 open open open open
+
+.fu N24_blk
+pinlist: N3 N11 N41 N29 N48 open open open open 
+subblock: N24_blk 0 1 2 3 4 open open open open
+
+.fu N39_blk
+pinlist: N11 N17 open open N39 open open open open 
+subblock: N39_blk 0 1 open open 4 open open open open
+
+.fu N31_blk
+pinlist: N9 N14 N4 N6 N31 open open open open 
+subblock: N31_blk 0 1 2 3 4 open open open open
+
+.fu N32_blk
+pinlist: N7 N11 N42 open N32 open open open open 
+subblock: N32_blk 0 1 2 open 4 open open open open
+
+.fu N34_blk
+pinlist: N5 N9 N4 N13 N34 open open open open 
+subblock: N34_blk 0 1 2 3 4 open open open open
+
+.fu N37_blk
+pinlist: N11 N15 N27 open N37 open open open open 
+subblock: N37_blk 0 1 2 open 4 open open open open
+

@@ -1,0 +1,33 @@
+procedure foo(in s32 in1,in s32 in3,in s32 in4,in s32 in15,in s32 in5,in s32 in7,in s32 in9,in s32 in18,in s32 in14,in s32 in24,in s32 in19,in s32 in28,in s32 in25,in s32 in34,in s32 in29,in s32 in38,out s32 D_2556)
+{
+  localvar s32 D_2557;
+  localvar s32 D_2558;
+  localvar s32 D_2559;
+  localvar s32 D_2560;
+  localvar s32 D_2561;
+  localvar s32 D_2562;
+  localvar s32 temp_1;
+  localvar s32 temp_2;
+  localvar s32 temp_3;
+  localvar s32 temp_4;
+  localvar s32 temp_5;
+  localvar s32 temp_6;
+  localvar s32 temp_7;
+  localvar s32 temp_8;
+L0005:
+  temp_1 <= mul in1,in3;
+  temp_2 <= mul in4,in15;
+  temp_3 <= mul in5,in7;
+  temp_4 <= mul in9,in18;
+  temp_5 <= mul in14,in24;
+  temp_6 <= mul in19,in28;
+  temp_7 <= mul in25,in34;
+  temp_8 <= mul in29,in38;
+  D_2557 <= add temp_1,temp_2;
+  D_2558 <= add D_2557,temp_3;
+  D_2559 <= add D_2558,temp_4;
+  D_2560 <= add D_2559,temp_5;
+  D_2561 <= add D_2560,temp_6;
+  D_2562 <= add D_2561,temp_7;
+  D_2556 <= add D_2562,temp_8;
+}

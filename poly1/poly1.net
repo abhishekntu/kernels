@@ -1,0 +1,25 @@
+.input N1
+pinlist: N1
+
+.input N2
+pinlist: N2
+
+.output out:N9
+pinlist: N9
+
+.fu N3_blk
+pinlist: N1 N5 N2 N4 N9 open open open open 
+subblock: N3_blk 0 1 2 3 4 open open open open
+
+.fu N4_blk
+pinlist: N2 N6 open open N4 open open open open 
+subblock: N4_blk 0 1 open open 4 open open open open
+
+.fu N5_blk
+pinlist: N1 open open open N5 open open open open 
+subblock: N5_blk 0 open open open 4 open open open open
+
+.fu N6_blk
+pinlist: N1 open open open N6 open open open open 
+subblock: N6_blk 0 open open open 4 open open open open
+

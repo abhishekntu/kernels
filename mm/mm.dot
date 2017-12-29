@@ -1,0 +1,72 @@
+digraph foo
+{
+  graph [rankdir="TB", nodesep = "0.175"];
+  node [fontname="Courier", fontsize="12", style="filled"];
+  edge [fontname="Courier", fontsize="12"];
+
+  D_2556  [label="D_2556", ntype="outvar", argix="0", dataspec="s32", bb="-1", shape="triangle", fillcolor="cyan"];
+  add_10  [label="add", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  add_11  [label="add", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  add_12  [label="add", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  add_13  [label="add", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  add_14  [label="add", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  add_8  [label="add", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  add_9  [label="add", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  in1  [label="in1", ntype="invar", argix="0", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+  in14  [label="in14", ntype="invar", argix="8", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+  in15  [label="in15", ntype="invar", argix="3", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+  in18  [label="in18", ntype="invar", argix="7", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+  in19  [label="in19", ntype="invar", argix="10", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+  in24  [label="in24", ntype="invar", argix="9", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+  in25  [label="in25", ntype="invar", argix="12", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+  in28  [label="in28", ntype="invar", argix="11", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+  in29  [label="in29", ntype="invar", argix="14", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+  in3  [label="in3", ntype="invar", argix="1", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+  in34  [label="in34", ntype="invar", argix="13", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+  in38  [label="in38", ntype="invar", argix="15", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+  in4  [label="in4", ntype="invar", argix="2", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+  in5  [label="in5", ntype="invar", argix="4", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+  in7  [label="in7", ntype="invar", argix="5", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+  in9  [label="in9", ntype="invar", argix="6", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+  mul_0  [label="mul", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mul_1  [label="mul", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mul_2  [label="mul", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mul_3  [label="mul", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mul_4  [label="mul", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mul_5  [label="mul", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mul_6  [label="mul", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mul_7  [label="mul", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+
+  add_10 -> add_11  [label="D_2559$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  add_11 -> add_12  [label="D_2560$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  add_12 -> add_13  [label="D_2561$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  add_13 -> add_14  [label="D_2562$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  add_14 -> D_2556  [label="D_2556", etype="D", vtype="outarg", order="1", argix="-1", dataspec="s32"];
+  add_8 -> add_9  [label="D_2557$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  add_9 -> add_10  [label="D_2558$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  in14 -> mul_4  [label="in14", etype="D", vtype="inarg", order="1", argix="-1", dataspec="s32"];
+  in15 -> mul_1  [label="in15", etype="D", vtype="inarg", order="2", argix="-1", dataspec="s32"];
+  in18 -> mul_3  [label="in18", etype="D", vtype="inarg", order="2", argix="-1", dataspec="s32"];
+  in19 -> mul_5  [label="in19", etype="D", vtype="inarg", order="1", argix="-1", dataspec="s32"];
+  in1 -> mul_0  [label="in1", etype="D", vtype="inarg", order="1", argix="-1", dataspec="s32"];
+  in24 -> mul_4  [label="in24", etype="D", vtype="inarg", order="2", argix="-1", dataspec="s32"];
+  in25 -> mul_6  [label="in25", etype="D", vtype="inarg", order="1", argix="-1", dataspec="s32"];
+  in28 -> mul_5  [label="in28", etype="D", vtype="inarg", order="2", argix="-1", dataspec="s32"];
+  in29 -> mul_7  [label="in29", etype="D", vtype="inarg", order="1", argix="-1", dataspec="s32"];
+  in34 -> mul_6  [label="in34", etype="D", vtype="inarg", order="2", argix="-1", dataspec="s32"];
+  in38 -> mul_7  [label="in38", etype="D", vtype="inarg", order="2", argix="-1", dataspec="s32"];
+  in3 -> mul_0  [label="in3", etype="D", vtype="inarg", order="2", argix="-1", dataspec="s32"];
+  in4 -> mul_1  [label="in4", etype="D", vtype="inarg", order="1", argix="-1", dataspec="s32"];
+  in5 -> mul_2  [label="in5", etype="D", vtype="inarg", order="1", argix="-1", dataspec="s32"];
+  in7 -> mul_2  [label="in7", etype="D", vtype="inarg", order="2", argix="-1", dataspec="s32"];
+  in9 -> mul_3  [label="in9", etype="D", vtype="inarg", order="1", argix="-1", dataspec="s32"];
+  mul_0 -> add_8  [label="temp_1$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  mul_1 -> add_8  [label="temp_2$1", etype="D", vtype="localvar", order="2", argix="-1", dataspec="s32"];
+  mul_2 -> add_9  [label="temp_3$1", etype="D", vtype="localvar", order="2", argix="-1", dataspec="s32"];
+  mul_3 -> add_10  [label="temp_4$1", etype="D", vtype="localvar", order="2", argix="-1", dataspec="s32"];
+  mul_4 -> add_11  [label="temp_5$1", etype="D", vtype="localvar", order="2", argix="-1", dataspec="s32"];
+  mul_5 -> add_12  [label="temp_6$1", etype="D", vtype="localvar", order="2", argix="-1", dataspec="s32"];
+  mul_6 -> add_13  [label="temp_7$1", etype="D", vtype="localvar", order="2", argix="-1", dataspec="s32"];
+  mul_7 -> add_14  [label="temp_8$1", etype="D", vtype="localvar", order="2", argix="-1", dataspec="s32"];
+
+}

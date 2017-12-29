@@ -1,0 +1,67 @@
+procedure foo()
+{
+  localvar s32 D_2536;
+  localvar s32 D_2537;
+  localvar s32 D_2538;
+  localvar s32 D_2539;
+  localvar s32 D_2540;
+  localvar s32 D_2541;
+  localvar s32 D_2542;
+  localvar s32 D_2543;
+  localvar s32 D_2544;
+  localvar s32 D_2545;
+  localvar s32 D_2546;
+  localvar s32 D_2547;
+  localvar s32 D_2548;
+  localvar s32 D_2549;
+  localvar s32 i[6];
+  localvar s32 o[4];
+  localvar s32 temp_1;
+  localvar s32 temp_3;
+  localvar s32 t00000;
+  localvar s32 t00001;
+  localvar s32 t00002;
+  localvar s32 t00003;
+  localvar s32 t00004;
+  localvar s32 t00005;
+  localvar s32 t00006;
+  localvar s32 t00007;
+  localvar s32 t00008;
+  localvar s32 t00009;
+  localvar s32 t00010;
+  localvar s32 t00011;
+  localvar s32 t00012;
+  localvar s32 t00013;
+  localvar s32 t00014;
+  localvar s32 t00015;
+L0005:
+  D_2536 <= load i,1;
+  D_2537 <= load i,2;
+  D_2538 <= mul D_2536,D_2537;
+  D_2539 <= load i,3;
+  D_2540 <= load i,4;
+  D_2541 <= mul D_2539,D_2540;
+  temp_1 <= add D_2538,D_2541;
+  D_2536 <= load i,1;
+  D_2540 <= load i,4;
+  D_2542 <= mul D_2536,D_2540;
+  D_2539 <= load i,3;
+  D_2537 <= load i,2;
+  D_2543 <= mul D_2539,D_2537;
+  temp_3 <= sub D_2542,D_2543;
+  D_2544 <= load i,0;
+  D_2545 <= sub D_2544,temp_1;
+  o <= store D_2545,0;
+  D_2544 <= load i,0;
+  D_2546 <= add D_2544,temp_1;
+  o <= store D_2546,1;
+  D_2547 <= load i,5;
+  D_2548 <= sub D_2547,temp_3;
+  o <= store D_2548,2;
+  D_2547 <= load i,5;
+  D_2549 <= add D_2547,temp_3;
+  o <= store D_2549,3;
+  L_EXIT <= jmpun;
+L_EXIT:
+  nop;
+}

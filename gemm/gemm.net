@@ -1,0 +1,216 @@
+.input N23
+pinlist: N23
+
+.input N22
+pinlist: N22
+
+.input N21
+pinlist: N21
+
+.input N20
+pinlist: N20
+
+.input N27
+pinlist: N27
+
+.input N26
+pinlist: N26
+
+.input N25
+pinlist: N25
+
+.input N24
+pinlist: N24
+
+.input N8
+pinlist: N8
+
+.input N9
+pinlist: N9
+
+.input N1
+pinlist: N1
+
+.input N2
+pinlist: N2
+
+.input N3
+pinlist: N3
+
+.input N4
+pinlist: N4
+
+.input N5
+pinlist: N5
+
+.input N6
+pinlist: N6
+
+.input N7
+pinlist: N7
+
+.input N12
+pinlist: N12
+
+.input N13
+pinlist: N13
+
+.input N10
+pinlist: N10
+
+.input N11
+pinlist: N11
+
+.input N16
+pinlist: N16
+
+.input N17
+pinlist: N17
+
+.input N14
+pinlist: N14
+
+.input N15
+pinlist: N15
+
+.input N18
+pinlist: N18
+
+.input N19
+pinlist: N19
+
+.output out:N74
+pinlist: N74
+
+.output out:N78
+pinlist: N78
+
+.output out:N73
+pinlist: N73
+
+.output out:N79
+pinlist: N79
+
+.output out:N80
+pinlist: N80
+
+.output out:N81
+pinlist: N81
+
+.output out:N75
+pinlist: N75
+
+.output out:N76
+pinlist: N76
+
+.output out:N77
+pinlist: N77
+
+.fu N55_blk
+pinlist: N1 N10 N15 N25 N55 open open open open 
+subblock: N55_blk 0 1 2 3 4 open open open open
+
+.fu N69_blk
+pinlist: N1 N18 N17 N25 N69 open open open open 
+subblock: N69_blk 0 1 2 3 4 open open open open
+
+.fu N58_blk
+pinlist: N11 N41 N61 open N74 open open open open 
+subblock: N58_blk 0 1 2 open 4 open open open open
+
+.fu N68_blk
+pinlist: N2 N57 N72 open N73 open open open open 
+subblock: N68_blk 0 1 2 open 4 open open open open
+
+.fu N49_blk
+pinlist: N16 N17 N9 N18 N49 open open open open 
+subblock: N49_blk 0 1 2 3 4 open open open open
+
+.fu N48_blk
+pinlist: N6 N7 N56 N49 N80 open open open open 
+subblock: N48_blk 0 1 2 3 4 open open open open
+
+.fu N65_blk
+pinlist: N9 N10 N15 N16 N65 open open open open 
+subblock: N65_blk 0 1 2 3 4 open open open open
+
+.fu N63_blk
+pinlist: N27 N53 N55 open N81 open open open open 
+subblock: N63_blk 0 1 2 open 4 open open open open
+
+.fu N62_blk
+pinlist: N12 N60 N65 open N77 open open open open 
+subblock: N62_blk 0 1 2 open 4 open open open open
+
+.fu N61_blk
+pinlist: N16 N20 N9 N23 N61 open open open open 
+subblock: N61_blk 0 1 2 3 4 open open open open
+
+.fu N60_blk
+pinlist: N6 N19 open open N60 open open open open 
+subblock: N60_blk 0 1 open open 4 open open open open
+
+.fu N41_blk
+pinlist: N6 N26 open open N41 open open open open 
+subblock: N41_blk 0 1 open open 4 open open open open
+
+.fu N40_blk
+pinlist: N14 N20 N8 N23 N40 open open open open 
+subblock: N40_blk 0 1 2 3 4 open open open open
+
+.fu N43_blk
+pinlist: N24 N35 N40 open N76 open open open open 
+subblock: N43_blk 0 1 2 open 4 open open open open
+
+.fu N44_blk
+pinlist: N5 N33 N52 open N78 open open open open 
+subblock: N44_blk 0 1 2 open 4 open open open open
+
+.fu N66_blk
+pinlist: N21 N39 N38 open N79 open open open open 
+subblock: N66_blk 0 1 2 open 4 open open open open
+
+.fu N71_blk
+pinlist: N7 N22 N50 N69 N75 open open open open 
+subblock: N71_blk 0 1 2 3 4 open open open open
+
+.fu N56_blk
+pinlist: N13 open open open N56 open open open open 
+subblock: N56_blk 0 open open open 4 open open open open
+
+.fu N57_blk
+pinlist: N22 N26 open open N57 open open open open 
+subblock: N57_blk 0 1 open open 4 open open open open
+
+.fu N52_blk
+pinlist: N14 N17 N8 N18 N52 open open open open 
+subblock: N52_blk 0 1 2 3 4 open open open open
+
+.fu N53_blk
+pinlist: N19 N22 open open N53 open open open open 
+subblock: N53_blk 0 1 open open 4 open open open open
+
+.fu N50_blk
+pinlist: N3 open open open N50 open open open open 
+subblock: N50_blk 0 open open open 4 open open open open
+
+.fu N38_blk
+pinlist: N14 N15 N8 N10 N38 open open open open 
+subblock: N38_blk 0 1 2 3 4 open open open open
+
+.fu N39_blk
+pinlist: N4 N19 open open N39 open open open open 
+subblock: N39_blk 0 1 open open 4 open open open open
+
+.fu N72_blk
+pinlist: N1 N23 N20 N25 N72 open open open open 
+subblock: N72_blk 0 1 2 3 4 open open open open
+
+.fu N33_blk
+pinlist: N4 N7 open open N33 open open open open 
+subblock: N33_blk 0 1 open open 4 open open open open
+
+.fu N35_blk
+pinlist: N4 N26 open open N35 open open open open 
+subblock: N35_blk 0 1 open open 4 open open open open
+
